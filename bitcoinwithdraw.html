@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS Trading Co.</title>
+    <link rel="shortcut icon" href="eco.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">SOS Trading Co.</a>
+        <section class="flex">
+            <a href="home.html" class="btn">Home</a>
+            <a href="profile.html" class="btn">Profile</a>
+        </section>
+    </header>
+
+    <div class="navbar">
+        <nav class="nav">
+            <a href="home.html"><i class="fas fa-home"></i></a>
+            <a href="about.html"><i class="fas fa-question-circle"></i></a>
+            <a href="plans.html"><i class="fas fa-comments-dollar"></i></a>
+            <a href="contact.html"><i class="fas fa-phone-square"></i></a>
+        </nav>
+      </div>
+
+    <section class="request">
+
+        <div class="recieve">
+            <h1>Request Withdraw</h1><br><br>
+            <p>Your Withdrawal Method is BITCOIN</p><br><br>
+           <form action="bitcoinwithdraw.html" method="post" enctype="multipart/form-data">
+            <input type="number" name="amount" placeholder="Enter Amount" class="with"><br><br>
+            <p>Enter your BITCOIN Address</p><br><br>
+            <input type="text" name="address" placeholder="Enter BITCOIN Address" class="with"><br><br>
+            Please enter correct wallet address to recieve your funds. <br><br>
+            <div class="btn" id="open-popup-btn">Complete Request</div>
+           </form>
+        </div>
+    </section>
+
+    <div class="popups centre">
+        <div class="icon">
+            !
+        </div>
+        <div class="title">
+            Pending!!
+        </div>
+        <div class="description">
+            Your request to Withdraw is being reviewed and balance will be deducted from your dashboard.
+        </div>
+            <button class="coppy"><a href="home.html">Done</a></button>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

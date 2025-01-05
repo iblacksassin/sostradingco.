@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS Trading Co.</title>
+    <link rel="shortcut icon" href="eco.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">SOS Trading Co. </a>
+        <section class="flex">
+            <a href="profile.html" class="btn">Profile</a>
+            <a href="login.html" class="btn">Log out</a>
+            </section>
+    </header>
+
+    <div class="navbar">
+        <nav class="nav">
+            <a href="home.html"><i class="fas fa-home"></i></a>
+            <a href="about.html"><i class="fas fa-question-circle"></i></a>
+            <a href="plans.html"><i class="fas fa-comments-dollar"></i></a>
+            <a href="contact.html"><i class="fas fa-phone-square"></i></a>
+        </nav>
+      </div>
+
+    <section class="dash">
+        <div class="main">
+            <h1>Welcome,</h1>
+        </div>
+
+
+        <div class="page">
+        <div id="section1">
+            <div class="balance"><span>$0.00</span></div><br>
+             <p>Account Balance</p>
+        </div>
+        <div id="section1">
+            <div class="balance"><span>$0.00</span></div> <br>
+             <p>Total Profit</p>
+        </div>
+        <div id="section1">
+            <div class="balance"><span>$0.00</span></div><br>
+               <p>Total Deposit</p>
+        </div>
+        <div id="section1">
+            <div class="balance"><span>$0.00</span></div> <br>
+                <p>Total Withdrawals</p>
+        </div>
+        <div id="section1">
+            <div class="balance"><span>$0.00</span></div> <br>
+                <p>Total Bonus</p>
+        </div>
+        <div id="section1">
+            <div class="balance"><span>$0.00</span></div> <br>
+                <p>Total Referral Bonus</p>
+        </div>
+        <div id="section1">
+            <div class="balance"><span>$<?php echo $plans; ?></span></div> <br>
+            <p>Total Investment Plans</p>
+        </div>
+        </div>
+    </section>
+    
+    <div class="Fund">
+       <div id="withdraw">
+           <a href="plans.html" class="btn">Fund your account</a>
+           <a href="withdraw.html" class="btn">Make withdraw</a>
+        </div>
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>SOS Trading Co.</title>
+    <link rel="shortcut icon" href="eco.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">SOS Trading Co.</a>
+        <section class="flex">
+            <a href="home.html" class="btn">Home</a>
+            <a href="profile.html" class="btn">Profile</a>
+        </section>
+    </header>
+    
+    <div class="navbar">
+        <nav class="nav">
+            <a href="home.html"><i class="fas fa-home"></i></a>
+            <a href="about.html"><i class="fas fa-question-circle"></i></a>
+            <a href="plans.html"><i class="fas fa-comments-dollar"></i></a>
+            <a href="contact.html"><i class="fas fa-phone-square"></i></a>
+        </nav>
+      </div>
+
+      <section class="dashboard">
+        <h1>Make Payment</h1><br>
+        <div class="p">
+           <p>You are to make payment using your selected payment method.
+              Screenshot and upload the proof of payment.
+           </p>
+        </div>
+        <div class="transactions">
+            <h3>ETHEREUM</h3><br><br>
+            <form action="ethereum.html" method="post" enctype="multipart/form-data">
+            <h2>Deposit Amount</h2> <br>
+            <input type="text" name="number" placeholder="Enter Amount" autocomplete="off" required> <br><br>
+            <p>Pay to our ETHEREUM Address:</p><br><br>
+            <div class="copyinp">
+                <input type="text" id="text-2" value="0x4CD435452305B3A7eC2fDE9Ab551FE017Fff089b" 
+                placeholder="0x4CD435452305B3A7eC2fDE9Ab551FE017Fff089b">
+                <div class="copy" onclick="copy('text-2')">Copy Text</div> <br><br>
+            </div>
+            <p>Network Type: ETH</p><br><br>
+            <p class="box">*Don't have ETHEREUM, buy using the link below
+                (ensure you copy the wallet address above and buy strictly to the address)
+                <a href="https://changelly.com/buy-crypto" class="btn">Buy ETHEREUM</a>
+            </p> <br><br>
+            <p>Upload proof of Payment (screenshot).</p><br><br>
+            <input type="file" name="image"><br><br>
+            <div class="coppy" id="open-popup-btn">Submit Payment</div>
+            </form>
+        </div>
+    </section>
+
+    <div class="popup center">
+        <div class="icon">
+            !
+        </div>
+        <div class="title">
+            Pending!!
+        </div>
+        <div class="description">
+            You have deposited succesfully and it's currently proccesing, 
+            deposit would be added to your dashboard shortly.
+        </div>
+            <button class="coppy"><a href="home.html">Done</a></button>
+    </div>
+
+
+    <script src="popup.js"></script>
+</body>
+</html>
